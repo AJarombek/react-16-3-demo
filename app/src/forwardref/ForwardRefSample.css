@@ -1,0 +1,19 @@
+/**
+ * Stylesheet for the ForwardRefSample components.
+ * Author: Andrew Jarombek
+ * Date: 1/16/2020
+ */
+
+.forward-ref-sample {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prop-ref, .forward-ref {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}

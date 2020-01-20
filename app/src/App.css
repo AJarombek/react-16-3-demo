@@ -1,0 +1,66 @@
+/**
+ * Stylesheet for the App component.
+ * Author: Andrew Jarombek
+ * Date: 12/26/2019
+ */
+
+h1, h2, h3 {
+    font-family: 'Roboto-Bold', Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: Longway, Helvetica, sans-serif;
+    text-align: center;
+}
+
+sup {
+    font-weight: bold;
+    font-family: 'Sylexiad-Bold', Helvetica, sans-serif;
+    color: #999;
+}
+
+.App .aj-text-card {
+    height: 350px !important;
+    background-color: #f6f6f6;
+}
+
+.aj-text-card-header {
+    height: 40px;
+}
+
+.aj-text-card-title {
+    text-align: center;
+}
+
+.aj-text-card-content {
+    height: 200px;
+    font-family: 'Sylexiad', Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+
+.aj-text-card-content code {
+    font-family: 'Fantasque-Bold', Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.aj-text-card-content a {
+    font-family: 'Sylexiad-Bold', Helvetica, sans-serif;
+    color: #999;
+    text-decoration: none;
+}
+
+.aj-text-card-content a:hover {
+    text-decoration: underline;
+}
+
+.aj-text-card-footer {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}

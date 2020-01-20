@@ -1,0 +1,85 @@
+/**
+ * Stylesheet for the ThemeWithProps/ThemeWithPropsCard components.
+ * Author: Andrew Jarombek
+ * Date: 1/5/2020
+ */
+
+/* ThemeWithProps styles */
+.theme-with-props, .theme-with-context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.theme-with-props .aj-switch-icon, .theme-with-context .aj-switch-icon {
+    margin: 10px;
+    height: 40px;
+}
+
+.theme-with-props .aj-switch-icon-off, .theme-with-props .aj-switch-icon-on,
+.theme-with-context .aj-switch-icon-off, .theme-with-context .aj-switch-icon-on {
+    height: 40px;
+    width: 40px;
+}
+
+.theme-with-props .aj-switch, .theme-with-context .aj-switch {
+    height: 30px;
+    width: 54px;
+}
+
+.theme-with-props .aj-switch-head, .theme-with-context .aj-switch-head {
+    width: 30px;
+    height: 30px;
+}
+
+.theme-with-props .aj-switch-tail, .theme-with-context .aj-switch-tail {
+    border-radius: 15px;
+}
+
+.light-theme-with-props, .light-theme-with-context {
+    background-color: white;
+}
+
+.dark-theme-with-props, .dark-theme-with-props {
+    background-color: #444;
+}
+
+.dark-theme-with-props .aj-switch-icon-off, .dark-theme-with-props .aj-switch-icon-on {
+    filter: invert(1);
+}
+
+/* ThemeWithPropsCard & ThemeWithContextCard styles */
+.theme-with-props-card, .theme-with-context-card {
+    width: 100%;
+}
+
+.theme-with-context-card .aj-text-card-title {
+    font-size: 19px;
+}
+
+.theme-with-props-card > .aj-text-card, .theme-with-context-card > .aj-text-card {
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+}
+
+.theme-with-props-card .aj-text-card-content, .theme-with-context-card .aj-text-card-content {
+    height: 100px;
+    margin: 10px 0 0 0;
+}
+
+.light-theme-with-props-card > .aj-text-card, .light-theme-with-context-card > .aj-text-card {
+    background-color: #f6f6f6;
+}
+
+.dark-theme-with-props-card > .aj-text-card, .dark-theme-with-context-card > .aj-text-card {
+    background-color: #565656;
+    color: #f6f6f6;
+}
+
+.dark-theme-with-props-card button, .dark-theme-with-context-card button {
+    color: #f6f6f6 !important;
+}

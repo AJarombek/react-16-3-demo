@@ -1,0 +1,54 @@
+/**
+ * Stylesheet for the ContextDemo component.
+ * Author: Andrew Jarombek
+ * Date: 12/31/2019
+ */
+
+.demo-body > p {
+    font-family: 'Sylexiad', Helvetica, sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.7px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.demo-body .aj-code-snippet {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.demo-body .aj-code-snippet > code {
+    font-family: 'Fantasque-Bold', Helvetica, sans-serif;
+}
+
+.demo-body p code, .demo-body p strong, .demo-body p a {
+    margin: 0 4px;
+}
+
+.demo-body p code {
+    font-family: 'Fantasque-Bold', Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #333;
+    color: rgb(97, 218, 250);
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.demo-body p code.code-listing {
+    background-color: transparent;
+    color: black;
+    margin-left: 30px;
+}
+
+.demo-body p strong, .demo-body p a {
+    font-family: 'Sylexiad-Bold', Helvetica, sans-serif;
+}
+
+.demo-body p a {
+    color: #999;
+    text-decoration: none;
+}
+
+.demo-body p a:hover {
+    text-decoration: underline;
+}

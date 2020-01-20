@@ -1,0 +1,20 @@
+/**
+ * Stylesheet for the ButtonWrapper/ForwardRefButtonWrapper components.
+ * Author: Andrew Jarombek
+ * Date: 1/16/2020
+ */
+
+.button-wrapper {
+    padding: 10px;
+    border: none;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.button-wrapper:active {
+    background-color: #e5e5e5;
+}
+
+.button-wrapper:focus {
+    outline: none;
+}
