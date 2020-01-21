@@ -1,0 +1,9 @@
+/**
+ * Stylesheet for the DerivedFromProps component.
+ * Author: Andrew Jarombek
+ * Date: 1/20/2020
+ */
+
+.derived-from-props .secret-code-classified p {
+    font-family: 'RobotoSlab-Regular', Helvetica, serif;
+}

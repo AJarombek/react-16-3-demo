@@ -4,10 +4,22 @@
  * @since 1/19/2020
  */
 
-import React from 'react';
+import React, { useState } from 'react';
+import DerivedFromProps from './DerivedFromProps';
+import { AJContainedButton } from 'jarombek-react-components';
 
 const DerivedFromPropsWrapper = () => {
-  return null;
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className="derived-from-props-wrapper">
+      <p><code>getDerivedStateFromProps()</code> Demonstration</p>
+      <AJContainedButton onClick={() => setShow(!show)}>
+        {show ? 'Show Secret Message' : 'Hide Secret Message'}
+      </AJContainedButton>
+      <DerivedFromProps show={show}/>
+    </div>
+  );
 };
 
 export default DerivedFromPropsWrapper;

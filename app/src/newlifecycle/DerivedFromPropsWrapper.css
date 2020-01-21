@@ -1,0 +1,21 @@
+/**
+ * Stylesheet for the DerivedFromProps component.
+ * Author: Andrew Jarombek
+ * Date: 1/20/2020
+ */
+
+.derived-from-props-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.derived-from-props-wrapper > p {
+    font-family: 'Sylexiad-Bold', Helvetica, sans-serif;
+}
+
+.derived-from-props-wrapper > p > code {
+    color: black;
+    background-color: transparent;
+}
