@@ -5,7 +5,7 @@
  */
 
 import React, { useState } from 'react';
-import DerivedFromProps from './DerivedFromProps';
+import DerivedFromProps from './DerivedFromPropsRefactored';
 import { AJContainedButton } from 'jarombek-react-components';
 
 const DerivedFromPropsWrapper = () => {

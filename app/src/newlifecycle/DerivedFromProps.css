@@ -4,6 +4,16 @@
  * Date: 1/20/2020
  */
 
-.derived-from-props .secret-code-classified p {
+.derived-from-props .secret-code-classified p, .derived-from-props .secret-code {
     font-family: 'RobotoSlab-Regular', Helvetica, serif;
+}
+
+.derived-from-props .secret-code-classified p {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+}
+
+.derived-from-props .secret-code {
+    padding: 5px;
 }

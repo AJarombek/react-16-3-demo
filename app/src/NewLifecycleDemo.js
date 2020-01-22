@@ -9,6 +9,18 @@ import FeaturePage from './FeaturePage';
 import { AJCodeSnippet } from 'jarombek-react-components';
 import DerivedFromPropsWrapper from './newlifecycle/DerivedFromPropsWrapper';
 
+const derivedFromPropsWrapperCodeSnippet =
+`
+`;
+
+const derivedFromPropsCodeSnippet =
+`
+`;
+
+const derivedFromPropsRefactoredCodeSnippet =
+`
+`;
+
 const NewLifecycleDemo = () => {
   return (
     <FeaturePage>
@@ -83,6 +95,7 @@ const NewLifecycleDemo = () => {
           <code>getDerivedStateFromProps()</code> and <code>getSnapshotBeforeUpdate()</code>
           specifically since they were released with React 16.3.
         </p>
+        <h2><code>getDerivedStateFromProps()</code></h2>
         <p>
           <code>getDerivedStateFromProps()</code> replaces the soon to be deprecated
           <code>componentWillReceiveProps()</code> lifecycle method. The main difference
@@ -100,7 +113,36 @@ const NewLifecycleDemo = () => {
           on the methods name, its main purpose is to update the state, which is derived from
           the props.
         </p>
+        <p>
+          The following example consists of two components -
+          <code>DerivedFromPropsWrapper</code> and <code>DerivedFromProps</code>.  The purpose of
+          <code>DerivedFromPropsWrapper</code> is to pass a prop down to
+          <code>DerivedFromProps</code>.  The <code>DerivedFromProps</code> component has a
+          <code>secretCode</code> state property which is derived from its boolean
+          <code>show</code> prop.
+        </p>
+        <AJCodeSnippet language="javascript">
+          {derivedFromPropsWrapperCodeSnippet}
+        </AJCodeSnippet>
+        <AJCodeSnippet language="javascript">
+          {derivedFromPropsCodeSnippet}
+        </AJCodeSnippet>
+        <p>
+          Here are the rendered components:
+        </p>
         <DerivedFromPropsWrapper/>
+        <p>
+          ... //TODO
+        </p>
+        <p>
+          Although this example helps demonstrate the basic functionality of
+          <code>getDerivedStateFromProps()</code>, in production code <code>DerivedFromProps</code>
+          should be refactored to be a stateless component.  Here is the code for
+          <code>DerivedFromProps</code> after proper refactoring:
+        </p>
+        <AJCodeSnippet language="javascript">
+          {derivedFromPropsRefactoredCodeSnippet}
+        </AJCodeSnippet>
       </div>
     </FeaturePage>
   );
