@@ -10,15 +10,94 @@ import { AJCodeSnippet } from 'jarombek-react-components';
 import DerivedFromPropsWrapper from './newlifecycle/DerivedFromPropsWrapper';
 
 const derivedFromPropsWrapperCodeSnippet =
-`
+`import React, { useState } from 'react';
+import DerivedFromProps from './DerivedFromProps';
+import { AJContainedButton } from 'jarombek-react-components';
+
+const DerivedFromPropsWrapper = () => {
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className="derived-from-props-wrapper">
+      <p><code>getDerivedStateFromProps()</code> Demonstration</p>
+      <AJContainedButton onClick={() => setShow(!show)}>
+        {show ? 'Show Secret Message' : 'Hide Secret Message'}
+      </AJContainedButton>
+      <DerivedFromProps show={show}/>
+    </div>
+  );
+};
 `;
 
 const derivedFromPropsCodeSnippet =
-`
+`import React from 'react';
+import PropTypes from 'prop-types';
+
+class DerivedFromProps extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      secretCode: 0
+    };
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    // Assert that this lifecycle method does not have access to the component instance.
+    console.assert(this, undefined);
+
+    if (props.show) {
+      return { secretCode: 1231 };
+    } else {
+      return { secretCode: 0 };
+    }
+  }
+
+  render() {
+    return (
+      <div className="derived-from-props">
+        { this.state.secretCode === 1231 ?
+          <p className="secret-code">
+            You have a beautiful heart.
+          </p>
+          :
+          <div className="secret-code-classified">
+            <p>CLASSIFIED</p>
+          </div>
+        }
+      </div>
+    )
+  }
+}
+
+DerivedFromProps.propTypes = {
+  show: PropTypes.bool.isRequired
+};
 `;
 
 const derivedFromPropsRefactoredCodeSnippet =
-`
+`import React from 'react';
+import PropTypes from 'prop-types';
+
+const DerivedFromPropsRefactored = ({show}) => {
+  return (
+    <div className="derived-from-props">
+      { show ?
+        <p className="secret-code">
+          You have a beautiful heart.
+        </p>
+        :
+        <div className="secret-code-classified">
+          <p>CLASSIFIED</p>
+        </div>
+      }
+    </div>
+  )
+};
+
+DerivedFromPropsRefactored.propTypes = {
+  show: PropTypes.bool.isRequired
+};
 `;
 
 const NewLifecycleDemo = () => {
@@ -114,6 +193,12 @@ const NewLifecycleDemo = () => {
           the props.
         </p>
         <p>
+          <code>getDerivedStateFromProps()</code> is called during the initial component render and
+          each subsequent re-render.  It takes two arguments, the state and props of the component.
+          Its expected to return either an object with properties to update the component state or
+          <code>null</code> if the component state should remain unchanged.
+        </p>
+        <p>
           The following example consists of two components -
           <code>DerivedFromPropsWrapper</code> and <code>DerivedFromProps</code>.  The purpose of
           <code>DerivedFromPropsWrapper</code> is to pass a prop down to
@@ -132,9 +217,6 @@ const NewLifecycleDemo = () => {
         </p>
         <DerivedFromPropsWrapper/>
         <p>
-          ... //TODO
-        </p>
-        <p>
           Although this example helps demonstrate the basic functionality of
           <code>getDerivedStateFromProps()</code>, in production code <code>DerivedFromProps</code>
           should be refactored to be a stateless component.  Here is the code for
@@ -143,6 +225,10 @@ const NewLifecycleDemo = () => {
         <AJCodeSnippet language="javascript">
           {derivedFromPropsRefactoredCodeSnippet}
         </AJCodeSnippet>
+        <h2><code>getSnapshotBeforeUpdate()</code></h2>
+        <p>
+
+        </p>
       </div>
     </FeaturePage>
   );
