@@ -102,8 +102,57 @@ DerivedFromPropsRefactored.propTypes = {
 `;
 
 const getSnapshotBeforeUpdateCodeSnippet =
-`
+`import React, {createRef} from 'react';
 
+class SnapshotBeforeUpdate extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.colors = [
+      'aqua', 'aquamarine', 'lightskyblue'
+    ];
+
+    this.buttonRef = createRef();
+    this.state = {
+      clicks: 0,
+      prevColor: 'none'
+    };
+  }
+
+  onButtonClick() {
+    this.setState({clicks: this.state.clicks + 1})
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    return {
+      color: this.buttonRef.current.style.backgroundColor
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (snapshot !== null && snapshot.color !== this.buttonRef.current.style.backgroundColor) {
+      this.setState({
+        prevColor: snapshot.color
+      });
+    }
+  }
+
+  render() {
+    return (
+      <div className="snapshot-before-update">
+        <button
+          ref={this.buttonRef}
+          onClick={() => this.onButtonClick()}
+          style={{backgroundColor: this.colors[this.state.clicks % 3]}}>
+
+          {this.colors[this.state.clicks % 3].toUpperCase()}
+        </button>
+        <p>Previous Color: <strong>{this.state.prevColor}</strong></p>
+      </div>
+    )
+  }
+}
 `;
 
 const NewLifecycleDemo = () => {

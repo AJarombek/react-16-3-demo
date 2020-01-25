@@ -6,6 +6,7 @@
 @import "forwardref/ButtonWrapper.css";
 @import "newlifecycle/DerivedFromProps.css";
 @import "newlifecycle/DerivedFromPropsWrapper.css";
+@import "newlifecycle/SnapshotBeforeUpdate.css";
 
 body {
     background-color: #e8e8e8;
