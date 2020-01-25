@@ -8,6 +8,7 @@ import React from 'react';
 import FeaturePage from './FeaturePage';
 import { AJCodeSnippet } from 'jarombek-react-components';
 import DerivedFromPropsWrapper from './newlifecycle/DerivedFromPropsWrapper';
+import SnapshotBeforeUpdate from './newlifecycle/SnapshotBeforeUpdate';
 
 const derivedFromPropsWrapperCodeSnippet =
 `import React, { useState } from 'react';
@@ -98,6 +99,11 @@ const DerivedFromPropsRefactored = ({show}) => {
 DerivedFromPropsRefactored.propTypes = {
   show: PropTypes.bool.isRequired
 };
+`;
+
+const getSnapshotBeforeUpdateCodeSnippet =
+`
+
 `;
 
 const NewLifecycleDemo = () => {
@@ -227,8 +233,34 @@ const NewLifecycleDemo = () => {
         </AJCodeSnippet>
         <h2><code>getSnapshotBeforeUpdate()</code></h2>
         <p>
-
+          <code>getSnapshotBeforeUpdate()</code> is a new lifecycle method used in conjunction with
+          <code>componentDidUpdate()</code>.  A combination of the two can be used as a replacement
+          for the deprecated <code>componentWillUpdate()</code> method.
         </p>
+        <p>
+          <code>getSnapshotBeforeUpdate()</code> and <code>componentDidUpdate()</code> are both
+          invoked right after <code>render()</code> executes.  However,
+          <code>getSnapshotBeforeUpdate()</code> is invoked before changes to the virtual DOM are
+          committed to the DOM<sup>11</sup>.  On the other hand, <code>componentDidUpdate()</code>
+          is invoked after changes to the virtual DOM are reflected in the DOM.
+        </p>
+        <p>
+          The return value of <code>getSnapshotBeforeUpdate()</code> is passed to the
+          <code>snapshot</code> parameter in <code>componentDidUpdate()</code>.  The typical use
+          case of <code>getSnapshotBeforeUpdate()</code> is to extract information from the DOM API
+          before DOM changes take place and pass that information along to the moment after DOM
+          changes occur.  I'm honestly still trying to think of scenarios where this would be
+          useful.  The React blog uses a chat application as an example, and most other online
+          sources simply copy and rephrase it<sup>12</sup>.
+        </p>
+        <p>
+          The example of <code>getSnapshotBeforeUpdate()</code> shown below isn't useful as a real
+          world scenario, however it does show the different moving pieces in the lifecycle method.
+        </p>
+        <SnapshotBeforeUpdate/>
+        <AJCodeSnippet language="javascript">
+          {getSnapshotBeforeUpdateCodeSnippet}
+        </AJCodeSnippet>
       </div>
     </FeaturePage>
   );
