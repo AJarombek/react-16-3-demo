@@ -62,6 +62,9 @@ module.exports = {
       filename: 'index.html'
     }),
   ],
+  devServer: {
+    historyApiFallback: true
+  },
   resolve: {
     alias: {
       // https://github.com/facebook/react/issues/13991#issuecomment-557677352

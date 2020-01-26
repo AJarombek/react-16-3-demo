@@ -7,8 +7,8 @@
 module.exports = {
     displayName: "components",
     testEnvironment: "jsdom",
-    testMatch: ["**/src/*.test.js"],
-    setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
+    testMatch: ["**/test/*.test.js"],
+    setupFilesAfterEnv: ["<rootDir>/test/setupTests.js"],
     maxConcurrency: 5,
     transform: {
         "^.+\\.js$": "babel-jest"

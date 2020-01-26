@@ -49,6 +49,11 @@ const App = () => {
       <code>getSnapshotBeforeUpdate()</code>.
     </>;
 
+  const strictModeNote =
+    <>
+
+    </>;
+
   return (
     <div className="App">
       <h1>React 16.3</h1>
@@ -89,7 +94,7 @@ const App = () => {
           <AJTextCard
             key="strict-mode"
             title="Strict Mode"
-            content={<>...</>}
+            content={strictModeNote}
             action={() => history.push('/strict-mode')}
             actionText="Learn More"
           />
