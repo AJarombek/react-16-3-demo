@@ -8,9 +8,12 @@ import React from 'react';
 
 const StrictModeComponent = () => {
   return (
-    <React.StrictMode>
-      <StrictModeChild />
-    </React.StrictMode>
+    <div className="strict-mode-component">
+      <StrictModeChild className="outside-strict-mode"><p>Outside Strict Mode</p></StrictModeChild>
+      <React.StrictMode>
+        <StrictModeChild className="inside-strict-mode"><p>Inside Strict Mode</p></StrictModeChild>
+      </React.StrictMode>
+    </div>
   );
 };
 
@@ -21,17 +24,15 @@ class StrictModeChild extends React.Component {
   }
 
   /**
-   * Prove that StrictMode will complain about the legacy componentWillUpdate() method.
+   * Prove that StrictMode will complain about the legacy UNSAFE_componentWillUpdate() method.
    */
-  componentWillUpdate(nextProps, nextState) {
-    console.info('Inside componentWillUpdate');
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
+    console.info('Inside UNSAFE_componentWillUpdate');
   }
 
   render() {
     return (
-      <div className="in-strict-mode">
-
-      </div>
+      <div className={this.props.className}>{this.props.children}</div>
     )
   }
 }

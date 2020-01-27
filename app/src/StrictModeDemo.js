@@ -10,8 +10,42 @@ import { AJCodeSnippet } from 'jarombek-react-components';
 import StrictModeComponent from './strictmode/StrictModeComponent';
 
 const codeSnippet =
-`
+`import React from 'react';
 
+const StrictModeComponent = () => {
+  return (
+    <div className="strict-mode-component">
+      <StrictModeChild className="outside-strict-mode"><p>Outside Strict Mode</p></StrictModeChild>
+      <React.StrictMode>
+        <StrictModeChild className="inside-strict-mode"><p>Inside Strict Mode</p></StrictModeChild>
+      </React.StrictMode>
+    </div>
+  );
+};
+`;
+
+const childCodeSnippet =
+`class StrictModeChild extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  /**
+   * Prove that StrictMode will complain about the legacy UNSAFE_componentWillUpdate() method.
+   */
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
+    console.info('Inside UNSAFE_componentWillUpdate');
+  }
+
+  render() {
+    return (
+      <div className={this.props.className}>{this.props.children}</div>
+    )
+  }
+}
+
+export default StrictModeComponent;
 `;
 
 const StrictModeDemo = () => {
@@ -26,11 +60,15 @@ const StrictModeDemo = () => {
               feature usage<sup>13</sup>.
             </p>
             <p>
-              The following component shows how <code>StrictMode</code> can be used:
+              The following component shows how <code>StrictMode</code> can be used.  You can check
+              the developer console to see the warnings that are thrown due to strict mode.
             </p>
             <StrictModeComponent />
             <AJCodeSnippet language="javascript">
               {codeSnippet}
+            </AJCodeSnippet>
+            <AJCodeSnippet>
+              {childCodeSnippet}
             </AJCodeSnippet>
           </div>
         </FeaturePage>

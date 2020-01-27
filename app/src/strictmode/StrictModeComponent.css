@@ -1,0 +1,31 @@
+/**
+ * Stylesheet for the StrictModeComponent & StrictModeChild components.
+ * Author: Andrew Jarombek
+ * Date: 1/27/2020
+ */
+
+.strict-mode-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.strict-mode-component div {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+
+    width: 100px;
+    height: 150px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.inside-strict-mode {
+    background-color: aquamarine;
+}
+
+.outside-strict-mode {
+    background-color: lightskyblue;
+}
