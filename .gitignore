@@ -1,4 +1,3 @@
-app/dist/*
 app/coverage/*
 app/node_modules/*
 .idea

@@ -51,7 +51,9 @@ const App = () => {
 
   const strictModeNote =
     <>
-
+      <code>StrictMode</code> is a new component added in React 16.3.  <code>StrictMode</code> does
+      not render anything in the DOM, instead displaying additional console warnings for unsafe
+      code.  Most of these relate to deprecated feature usage<sup>13</sup>.
     </>;
 
   return (
