@@ -16,3 +16,31 @@ describe('unit tests', () => {
   });
 
 });
+
+describe('integration tests', () => {
+
+  it('changes theme', () => {
+    const wrapper = mount(<ThemeWithProps />);
+    const themeSwitch = wrapper.find('.aj-switch');
+
+    expect(wrapper.find('.theme-with-props').hasClass('light-theme-with-props'))
+      .toBe(true);
+    expect(wrapper.find('.theme-with-props-card').hasClass('light-theme-with-props-card'))
+      .toBe(true);
+
+    themeSwitch.simulate('click');
+
+    expect(wrapper.find('.theme-with-props').hasClass('dark-theme-with-props'))
+      .toBe(true);
+    expect(wrapper.find('.theme-with-props-card').hasClass('dark-theme-with-props-card'))
+      .toBe(true);
+
+    themeSwitch.simulate('click');
+
+    expect(wrapper.find('.theme-with-props').hasClass('light-theme-with-props'))
+      .toBe(true);
+    expect(wrapper.find('.theme-with-props-card').hasClass('light-theme-with-props-card'))
+      .toBe(true);
+  });
+
+});

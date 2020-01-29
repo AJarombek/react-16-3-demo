@@ -16,3 +16,31 @@ describe('unit tests', () => {
   });
 
 });
+
+describe('integration tests', () => {
+
+  it('changes theme', () => {
+    const wrapper = mount(<ThemeWithContext />);
+    const themeSwitch = wrapper.find('.aj-switch');
+
+    expect(wrapper.find('.theme-with-context').hasClass('light-theme-with-context'))
+      .toBe(true);
+    expect(wrapper.find('.theme-with-context-card').hasClass('light-theme-with-context-card'))
+      .toBe(true);
+
+    themeSwitch.simulate('click');
+
+    expect(wrapper.find('.theme-with-context').hasClass('dark-theme-with-context'))
+      .toBe(true);
+    expect(wrapper.find('.theme-with-context-card').hasClass('dark-theme-with-context-card'))
+      .toBe(true);
+
+    themeSwitch.simulate('click');
+
+    expect(wrapper.find('.theme-with-context').hasClass('light-theme-with-context'))
+      .toBe(true);
+    expect(wrapper.find('.theme-with-context-card').hasClass('light-theme-with-context-card'))
+      .toBe(true);
+  });
+
+});
