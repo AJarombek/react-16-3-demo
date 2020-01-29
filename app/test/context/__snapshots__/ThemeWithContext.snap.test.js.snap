@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="theme-with-context light-theme-with-context"
+>
+  <div
+    className="ajSwitchIconContainer-0-2-1 aj-switch-icon"
+  >
+    <figure
+      className="ajSwitchIcon-0-2-2 ajSwitchIconNotSelected-0-2-3 aj-switch-icon-off"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </figure>
+    <div
+      className="ajSwitch-0-2-4 ajSwitchActive-0-2-6 aj-switch"
+      onClick={[Function]}
+    >
+      <div
+        className="ajSwitchHead-0-2-8 ajSwitchHeadActive-0-2-9 aj-switch-head"
+      >
+         
+      </div>
+      <div
+        className="ajSwitchTail-0-2-11 ajSwitchTailActive-0-2-12 aj-switch-tail"
+      >
+         
+      </div>
+    </div>
+    <figure
+      className="ajSwitchIcon-0-2-2 aj-switch-icon-on"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </figure>
+  </div>
+  <div
+    className="theme-with-context-card light-theme-with-context-card"
+  >
+    <div
+      className="ajTextCard-0-2-14 aj-text-card"
+    >
+      <div
+        className="aj-text-card-header"
+      >
+        <h2
+          className="aj-text-card-title"
+        >
+          Theme implemented with the context API
+        </h2>
+        <p
+          className="aj-text-card-subtitle"
+        />
+      </div>
+      <div
+        className="aj-text-card-body"
+      >
+        <p
+          className="aj-text-card-content"
+        >
+          ... content ...
+        </p>
+      </div>
+      <div
+        className="aj-text-card-footer"
+      >
+        <div
+          className="ajBaseButton-0-2-18 ajBaseButtonEnabled-0-2-19 aj-text-button ajTextButton-0-2-15 ajTextButtonEnabled-0-2-16"
+          onClick={null}
+        >
+          <button
+            disabled={false}
+            type="button"
+          >
+            Button
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

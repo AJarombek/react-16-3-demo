@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import RefSamples from '../../src/context/RefSamples';
+import RefSamples from '../../src/createref/RefSamples';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="forward-ref-sample"
+>
+  <div
+    className="prop-ref"
+  >
+    <h3>
+      Ref on Component WITHOUT a Forward Ref
+    </h3>
+    <button
+      className="button-wrapper"
+      onClick={[Function]}
+      type="button"
+    >
+      No Forward Ref
+    </button>
+    <p>
+      ""
+    </p>
+  </div>
+  <div
+    className="forward-ref"
+  >
+    <h3>
+      Ref on Component WITH a Forward Ref
+    </h3>
+    <button
+      className="button-wrapper"
+      onClick={[Function]}
+      type="button"
+    >
+      Forward Ref
+    </button>
+    <p>
+      ""
+    </p>
+  </div>
+</div>
+`;

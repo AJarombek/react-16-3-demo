@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="ref-samples"
+>
+  <div
+    className="callback-ref-sample"
+  >
+    <h3>
+      Callback Ref
+    </h3>
+    <figure>
+      <img
+        src="test-file-stub"
+      />
+    </figure>
+    <div
+      className="ajBaseButton-0-2-4 ajBaseButtonEnabled-0-2-5 aj-outlined-button ajOutlinedButton-0-2-1 ajOutlinedButtonEnabled-0-2-2"
+      onClick={[Function]}
+    >
+      <button
+        disabled={false}
+        type="button"
+      >
+        Activate
+      </button>
+    </div>
+  </div>
+  <div
+    className="string-ref-sample"
+  >
+    <h3>
+      String Ref
+    </h3>
+    <figure>
+      <img
+        src="test-file-stub"
+      />
+    </figure>
+    <div
+      className="ajBaseButton-0-2-4 ajBaseButtonEnabled-0-2-5 aj-outlined-button ajOutlinedButton-0-2-1 ajOutlinedButtonEnabled-0-2-2"
+      onClick={[Function]}
+    >
+      <button
+        disabled={false}
+        type="button"
+      >
+        Activate
+      </button>
+    </div>
+  </div>
+  <div
+    className="createref-ref-sample"
+  >
+    <h3>
+      createRef() Ref
+    </h3>
+    <figure>
+      <img
+        src="test-file-stub"
+      />
+    </figure>
+    <div
+      className="ajBaseButton-0-2-4 ajBaseButtonEnabled-0-2-5 aj-outlined-button ajOutlinedButton-0-2-1 ajOutlinedButtonEnabled-0-2-2"
+      onClick={[Function]}
+    >
+      <button
+        disabled={false}
+        type="button"
+      >
+        Activate
+      </button>
+    </div>
+  </div>
+</div>
+`;

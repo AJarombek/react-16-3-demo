@@ -4268,8 +4268,9 @@ istanbul-reports@^2.2.6:
   dependencies:
     handlebars "^4.1.2"
 
-"jarombek-react-components@file:../../jarombek-react-components":
+"jarombek-react-components@git://github.com/ajarombek/jarombek-react-components.git":
   version "0.1.0"
+  resolved "git://github.com/ajarombek/jarombek-react-components.git#743102384d07bc244fc814721e8282990644a3a2"
   dependencies:
     classnames "^2.2.6"
     highlight.js "^9.17.1"

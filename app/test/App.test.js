@@ -34,8 +34,17 @@ describe('unit tests', () => {
     const pushSpy = jest.spyOn(useHistory(), 'push').mockImplementation();
 
     const wrapper = mount(<App/>);
-    console.info(wrapper.debug());
-    expect(wrapper.exists()).toBe(true);
+    const contextButton = wrapper.find('.aj-text-button').at(0).childAt(0);
+    expect(contextButton.type()).toEqual('button');
+
+    expect(pushSpy).not.toHaveBeenCalled();
+    expect(pushSpy).toHaveBeenCalledTimes(0);
+
+    contextButton.simulate('click');
+
+    expect(pushSpy).toHaveBeenCalled();
+    expect(pushSpy).toHaveBeenCalledTimes(1);
+    expect(pushSpy).toHaveBeenCalledWith('/context');
 
     pushSpy.mockRestore();
   });
