@@ -5,18 +5,25 @@
  */
 
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import App from '../src/App';
+import { useHistory } from 'react-router-dom';
 
 // Mock react router's useHistory() hook before the tests execute.
-jest.mock('react-router-dom', () => ({
-  ...jest.requireActual('react-router-dom'),
-  useHistory: () => ({
+jest.mock('react-router-dom', () => {
+  const historyObj = {
     push: jest.fn()
-  })
-}));
+  };
+
+  return {
+    ...jest.requireActual('react-router-dom'),
+    useHistory: () => historyObj
+  }
+});
 
 describe('unit tests', () => {
+
+  beforeEach(() => jest.resetModuleRegistry());
 
   it('renders', () => {
     const wrapper = shallow(<App/>);
@@ -24,9 +31,10 @@ describe('unit tests', () => {
   });
 
   it('calls React Router push() when clicking on the Context card', () => {
-    const pushSpy = jest.spyOn(history, 'push');
+    const pushSpy = jest.spyOn(useHistory(), 'push').mockImplementation();
 
-    const wrapper = shallow(<App/>);
+    const wrapper = mount(<App/>);
+    console.info(wrapper.debug());
     expect(wrapper.exists()).toBe(true);
 
     pushSpy.mockRestore();

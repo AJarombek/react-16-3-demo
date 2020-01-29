@@ -58,7 +58,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>React 16.3</h1>
+      <h1 onClick={() => history.push('/context')}>React 16.3</h1>
       <p>Release Date: March 29, 2018</p>
       <AJResponsiveGrid
         smallBreakpoint="500px"

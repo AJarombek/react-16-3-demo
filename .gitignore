@@ -1,4 +1,5 @@
 app/coverage/*
 app/node_modules/*
+dist
 .idea
 .idea/vcs.xml

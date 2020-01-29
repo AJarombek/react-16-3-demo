@@ -5,23 +5,26 @@
  */
 
 module.exports = {
-    displayName: "components",
-    testEnvironment: "jsdom",
-    testMatch: ["**/test/**/*.test.js"],
-    setupFilesAfterEnv: ["<rootDir>/test/setupTests.js"],
-    maxConcurrency: 5,
-    transform: {
-        "^.+\\.js$": "babel-jest"
-    },
-    collectCoverage: true,
-    collectCoverageFrom: ["src/**/*.js"],
-    coveragePathIgnorePatterns: [],
-    coverageThreshold: {
-        "global": {
-            "branches": 100,
-            "functions": 100,
-            "lines": 100,
-            "statements": 100
-        }
-    },
+  displayName: 'components',
+  testEnvironment: 'jsdom',
+  testMatch: ['**/test/**/*.test.js'],
+  setupFilesAfterEnv: ['<rootDir>/test/setupTests.js'],
+  maxConcurrency: 5,
+  moduleNameMapper: {
+    '\\.(png)$': '../../test/mocks/fileMock.js'
+  },
+  transform: {
+    '^.+\\.js$': 'babel-jest'
+  },
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.js'],
+  coveragePathIgnorePatterns: [],
+  coverageThreshold: {
+    'global': {
+      'branches': 100,
+      'functions': 100,
+      'lines': 100,
+      'statements': 100
+    }
+  },
 };
