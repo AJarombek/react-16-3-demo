@@ -38,3 +38,4 @@ class StrictModeChild extends React.Component {
 }
 
 export default StrictModeComponent;
+export {StrictModeChild};

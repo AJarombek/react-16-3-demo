@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="ajNavTextCircle-0-2-1 textRight-0-2-2"
+  >
+    <div
+      className="ajNavCircle-0-2-5 ajNavCircle-d0-0-2-13 active-0-2-6"
+      onClick={[Function]}
+    >
+      <figure>
+        <img
+          className="left-0-2-11 img-0-2-8 img-d1-0-2-14"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAjVJREFUeAHt21tqhDAYhmFvu4ki3VnvuugpMgvp4Q/lAxuiJh5iDq8Q0hkdTZ+3zkXBYWBDAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAIHhBYPDAqcZvtpSHjY+Di+p3xO8268+2Xg7SuBifNr4sfFtgyiGkLi5GF82nOHTxu4o8xjuZEQxhMRtHkOGu6KEYuiE3ClxVUIxZJgcZS0Id8p2kLUYzi85iLskUbbhQ0dcEkMXIook4uZLY2gJRJHE+pwlhpZAFEmE56wxtASiSOL/fEsMLYEokvibb42hpRCloBhEKTBG71GK+JpSBH/u7eur6BiK00uUKmL0EqWqGK1HqTJGq1GqjtFalCZitBKlqRi1R2kyRq1Rmo5RW5QuYtQSpasYpUfpMkapUbqOUVoUYqiIzXf/Q5IYsxj68a4oxFCBwJw7CjECEfy3ckUhhi+/8vrqKMRYwV/adVUUYiyJR7x/dhRiRKBvHXJWFGJsSSfsPxqFGAnYsYfujUKMWOEdx6VGIcYO5NSPxEYhRqrsgeNH++xkQw9N+rN77FiPHvv73OvJxmiD7USBrTslFMK997Sx+9nwE9ff5KlSoxAjw59BbBRiZIihS2xFIYakMs5LUYiRMYJ/KT8KMXyhG14rCjFuwF+65Gg73GBDAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAIGSBX4BK4DEtcIi4HkAAAAASUVORK5CYII="
+        />
+      </figure>
+    </div>
+    <div
+      className="description-0-2-4"
+    >
+      Home
+    </div>
+  </div>
+  <h1>
+    Strict Mode
+  </h1>
+  <div
+    className="demo-body"
+  >
+    <p>
+      <code>
+        StrictMode
+      </code>
+       is a new component added in React 16.3.
+      <code>
+        StrictMode
+      </code>
+       does not render anything in the DOM, instead displaying additional console warnings for unsafe code.  Most of these relate to deprecated feature usage
+      <sup>
+        13
+      </sup>
+      .
+    </p>
+    <p>
+      The following component shows how 
+      <code>
+        StrictMode
+      </code>
+       can be used.  You can check the developer console to see the warnings that are thrown due to strict mode.
+    </p>
+    <div
+      className="strict-mode-component"
+    >
+      <div
+        className="outside-strict-mode"
+      >
+        <p>
+          Outside Strict Mode
+        </p>
+      </div>
+      <div
+        className="inside-strict-mode"
+      >
+        <p>
+          Inside Strict Mode
+        </p>
+      </div>
+    </div>
+    <div
+      className="aj-code-snippet"
+    >
+      <code
+        className="javascript hljs-0-2-15"
+        title="JavaScript"
+      >
+        import React from 'react';
+
+const StrictModeComponent = () =&gt; {
+  return (
+    &lt;div className="strict-mode-component"&gt;
+      &lt;StrictModeChild className="outside-strict-mode"&gt;&lt;p&gt;Outside Strict Mode&lt;/p&gt;&lt;/StrictModeChild&gt;
+      &lt;React.StrictMode&gt;
+        &lt;StrictModeChild className="inside-strict-mode"&gt;&lt;p&gt;Inside Strict Mode&lt;/p&gt;&lt;/StrictModeChild&gt;
+      &lt;/React.StrictMode&gt;
+    &lt;/div&gt;
+  );
+};
+
+      </code>
+    </div>
+    <div
+      className="aj-code-snippet"
+    >
+      <code
+        className="javascript hljs-0-2-15"
+        title=""
+      >
+        class StrictModeChild extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  /**
+   * Prove that StrictMode will complain about the legacy UNSAFE_componentWillUpdate() method.
+   */
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
+    console.info('Inside UNSAFE_componentWillUpdate');
+  }
+
+  render() {
+    return (
+      &lt;div className={this.props.className}&gt;{this.props.children}&lt;/div&gt;
+    )
+  }
+}
+
+export default StrictModeComponent;
+
+      </code>
+    </div>
+  </div>
+</div>
+`;

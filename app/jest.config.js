@@ -18,7 +18,7 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.js'],
-  coveragePathIgnorePatterns: [],
+  coveragePathIgnorePatterns: ['src/index.js'],
   coverageThreshold: {
     'global': {
       'branches': 100,

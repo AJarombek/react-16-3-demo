@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="ajNavTextCircle-0-2-1 textRight-0-2-2"
+  >
+    <div
+      className="ajNavCircle-0-2-5 ajNavCircle-d0-0-2-13 active-0-2-6"
+      onClick={[Function]}
+    >
+      <figure>
+        <img
+          className="left-0-2-11 img-0-2-8 img-d1-0-2-14"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAjVJREFUeAHt21tqhDAYhmFvu4ki3VnvuugpMgvp4Q/lAxuiJh5iDq8Q0hkdTZ+3zkXBYWBDAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAIHhBYPDAqcZvtpSHjY+Di+p3xO8268+2Xg7SuBifNr4sfFtgyiGkLi5GF82nOHTxu4o8xjuZEQxhMRtHkOGu6KEYuiE3ClxVUIxZJgcZS0Id8p2kLUYzi85iLskUbbhQ0dcEkMXIook4uZLY2gJRJHE+pwlhpZAFEmE56wxtASiSOL/fEsMLYEokvibb42hpRCloBhEKTBG71GK+JpSBH/u7eur6BiK00uUKmL0EqWqGK1HqTJGq1GqjtFalCZitBKlqRi1R2kyRq1Rmo5RW5QuYtQSpasYpUfpMkapUbqOUVoUYqiIzXf/Q5IYsxj68a4oxFCBwJw7CjECEfy3ckUhhi+/8vrqKMRYwV/adVUUYiyJR7x/dhRiRKBvHXJWFGJsSSfsPxqFGAnYsYfujUKMWOEdx6VGIcYO5NSPxEYhRqrsgeNH++xkQw9N+rN77FiPHvv73OvJxmiD7USBrTslFMK997Sx+9nwE9ff5KlSoxAjw59BbBRiZIihS2xFIYakMs5LUYiRMYJ/KT8KMXyhG14rCjFuwF+65Gg73GBDAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAIGSBX4BK4DEtcIi4HkAAAAASUVORK5CYII="
+        />
+      </figure>
+    </div>
+    <div
+      className="description-0-2-4"
+    >
+      Home
+    </div>
+  </div>
+  <h1>
+    ForwardRef API
+  </h1>
+  <div
+    className="demo-body"
+  >
+    <p>
+      Ref Forwarding is when refs are passed through a component to a React element. Passing refs through props does not work, so special logic is needed.  If you try to pass a ref as a prop, it is bound to the component instead of the underlying DOM node.  For functional components, the ref will equal 
+      <code>
+        null
+      </code>
+      <sup>
+        7
+      </sup>
+      .
+    </p>
+    <p>
+      React 16.3 introduced ref forwarding, which allows refs to be forwarded through a component to an underlying DOM node.  Forward refs are declared with the
+      <code>
+        forwardRef()
+      </code>
+       method on the component that performs the forwarding.
+    </p>
+    <p>
+      The following example demonstrates two components which are wrappers around
+      <code>
+        &lt;button&gt;
+      </code>
+       elements.  One uses ref forwarding and one doesn't. Clicking on the buttons will display the value of the ref on the screen.  Ref values are also printed to the console in the browser's developer tools.
+    </p>
+    <div
+      className="forward-ref-sample"
+    >
+      <div
+        className="prop-ref"
+      >
+        <h3>
+          Ref on Component WITHOUT a Forward Ref
+        </h3>
+        <button
+          className="button-wrapper"
+          onClick={[Function]}
+          type="button"
+        >
+          No Forward Ref
+        </button>
+        <p>
+          ""
+        </p>
+      </div>
+      <div
+        className="forward-ref"
+      >
+        <h3>
+          Ref on Component WITH a Forward Ref
+        </h3>
+        <button
+          className="button-wrapper"
+          onClick={[Function]}
+          type="button"
+        >
+          Forward Ref
+        </button>
+        <p>
+          ""
+        </p>
+      </div>
+    </div>
+    <p>
+      Here's the code for the button without ref forwarding:
+    </p>
+    <div
+      className="aj-code-snippet"
+    >
+      <code
+        className="javascript hljs-0-2-15"
+        title="JavaScript"
+      >
+        const ButtonWrapper = (props) =&gt; {
+  const {children, onClick, ref} = props;
+
+  return (
+    &lt;button className="button-wrapper" type="button" onClick={onClick} ref={ref}&gt;
+      {children}
+    &lt;/button&gt;
+  );
+};
+
+      </code>
+    </div>
+    <p>
+      Here's the code for the button with ref forwarding:
+    </p>
+    <div
+      className="aj-code-snippet"
+    >
+      <code
+        className="javascript hljs-0-2-15"
+        title="JavaScript"
+      >
+        const ButtonWrapper = forwardRef((props, ref) =&gt; {
+  const {children, onClick} = props;
+
+  return (
+    &lt;button className="button-wrapper" type="button" onClick={onClick} ref={ref}&gt;
+      {children}
+    &lt;/button&gt;
+  );
+});
+
+      </code>
+    </div>
+    <p>
+      To implement forward ref passing, the component definition needs to be wrapped in the
+      <code>
+        forwardRef()
+      </code>
+       function as shown above.
+    </p>
+  </div>
+</div>
+`;

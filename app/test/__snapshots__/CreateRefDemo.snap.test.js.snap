@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="ajNavTextCircle-0-2-1 textRight-0-2-2"
+  >
+    <div
+      className="ajNavCircle-0-2-5 ajNavCircle-d0-0-2-13 active-0-2-6"
+      onClick={[Function]}
+    >
+      <figure>
+        <img
+          className="left-0-2-11 img-0-2-8 img-d1-0-2-14"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAjVJREFUeAHt21tqhDAYhmFvu4ki3VnvuugpMgvp4Q/lAxuiJh5iDq8Q0hkdTZ+3zkXBYWBDAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAIHhBYPDAqcZvtpSHjY+Di+p3xO8268+2Xg7SuBifNr4sfFtgyiGkLi5GF82nOHTxu4o8xjuZEQxhMRtHkOGu6KEYuiE3ClxVUIxZJgcZS0Id8p2kLUYzi85iLskUbbhQ0dcEkMXIook4uZLY2gJRJHE+pwlhpZAFEmE56wxtASiSOL/fEsMLYEokvibb42hpRCloBhEKTBG71GK+JpSBH/u7eur6BiK00uUKmL0EqWqGK1HqTJGq1GqjtFalCZitBKlqRi1R2kyRq1Rmo5RW5QuYtQSpasYpUfpMkapUbqOUVoUYqiIzXf/Q5IYsxj68a4oxFCBwJw7CjECEfy3ckUhhi+/8vrqKMRYwV/adVUUYiyJR7x/dhRiRKBvHXJWFGJsSSfsPxqFGAnYsYfujUKMWOEdx6VGIcYO5NSPxEYhRqrsgeNH++xkQw9N+rN77FiPHvv73OvJxmiD7USBrTslFMK997Sx+9nwE9ff5KlSoxAjw59BbBRiZIihS2xFIYakMs5LUYiRMYJ/KT8KMXyhG14rCjFuwF+65Gg73GBDAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAIGSBX4BK4DEtcIi4HkAAAAASUVORK5CYII="
+        />
+      </figure>
+    </div>
+    <div
+      className="description-0-2-4"
+    >
+      Home
+    </div>
+  </div>
+  <h1>
+    CreateRef API
+  </h1>
+  <div
+    className="demo-body"
+  >
+    <p>
+      Refs are a feature I've known about and used since I first learned React. Refs provide a way to access a DOM node and use the DOM API. React is well known for its virtual DOM, a layer of abstraction on top of the DOM. Usually we interact with the virtual DOM in a declarative way, however Refs allow us to write traditional imperative DOM API code. Prior to React 16.3, there were two ways to create Refs.  The first was with a string and the second was with a callback function.  React 16.3 introduced a new way to create Refs with the 
+      <code>
+        createRef()
+      </code>
+       method.
+    </p>
+    <p>
+      All three Ref creation methods (callback function, string, 
+      <code>
+        createRef()
+      </code>
+      ) produce the same result.  The following example demonstrates how Refs are used to turn on light bulb images using the DOM API.
+    </p>
+    <div
+      className="ref-samples"
+    >
+      <div
+        className="callback-ref-sample"
+      >
+        <h3>
+          Callback Ref
+        </h3>
+        <figure>
+          <img
+            src="test-file-stub"
+          />
+        </figure>
+        <div
+          className="ajBaseButton-0-2-18 ajBaseButtonEnabled-0-2-19 aj-outlined-button ajOutlinedButton-0-2-15 ajOutlinedButtonEnabled-0-2-16"
+          onClick={[Function]}
+        >
+          <button
+            disabled={false}
+            type="button"
+          >
+            Activate
+          </button>
+        </div>
+      </div>
+      <div
+        className="string-ref-sample"
+      >
+        <h3>
+          String Ref
+        </h3>
+        <figure>
+          <img
+            src="test-file-stub"
+          />
+        </figure>
+        <div
+          className="ajBaseButton-0-2-18 ajBaseButtonEnabled-0-2-19 aj-outlined-button ajOutlinedButton-0-2-15 ajOutlinedButtonEnabled-0-2-16"
+          onClick={[Function]}
+        >
+          <button
+            disabled={false}
+            type="button"
+          >
+            Activate
+          </button>
+        </div>
+      </div>
+      <div
+        className="createref-ref-sample"
+      >
+        <h3>
+          createRef() Ref
+        </h3>
+        <figure>
+          <img
+            src="test-file-stub"
+          />
+        </figure>
+        <div
+          className="ajBaseButton-0-2-18 ajBaseButtonEnabled-0-2-19 aj-outlined-button ajOutlinedButton-0-2-15 ajOutlinedButtonEnabled-0-2-16"
+          onClick={[Function]}
+        >
+          <button
+            disabled={false}
+            type="button"
+          >
+            Activate
+          </button>
+        </div>
+      </div>
+    </div>
+    <p>
+      This example is a single component written with the following code:
+    </p>
+    <div
+      className="aj-code-snippet"
+    >
+      <code
+        className="javascript hljs-0-2-21"
+        title="JavaScript"
+      >
+        import React, {createRef} from 'react';
+import { AJOutlinedButton } from 'jarombek-react-components';
+
+import light from '../assets/light.png';
+
+class RefSamples extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    /* Callack Refs */
+    this.lightFigure1 = null;
+
+    this.setLightFigureRef = element =&gt; this.lightFigure1 = element;
+
+    this.focusLightFigure1 = () =&gt; {
+      if (this.lightFigure1) {
+        this.lightFigure1.style.filter = 'brightness(5)';
+      }
+    };
+
+    /* String Refs */
+    this.focusLightFigure2 = () =&gt; {
+      this.refs.lightFigure2.style.filter = 'brightness(5)';
+    };
+
+    /* createRef() Refs */
+    this.lightFigure3 = createRef();
+
+    this.focusLightFigure3 = () =&gt; this.lightFigure3.current.style.filter = 'brightness(5)';
+  }
+
+  render() {
+    return (
+      &lt;div className="ref-samples"&gt;
+        &lt;div className="callback-ref-sample"&gt;
+          &lt;h3&gt;Callback Ref&lt;/h3&gt;
+          &lt;figure&gt;
+            &lt;img src={light} ref={this.setLightFigureRef} /&gt;
+          &lt;/figure&gt;
+          &lt;AJOutlinedButton onClick={() =&gt; this.focusLightFigure1()} disabled={false}&gt;
+            Activate
+          &lt;/AJOutlinedButton&gt;
+        &lt;/div&gt;
+        &lt;div className="string-ref-sample"&gt;
+          &lt;h3&gt;String Ref&lt;/h3&gt;
+          &lt;figure&gt;
+            &lt;img src={light} ref="lightFigure2" /&gt;
+          &lt;/figure&gt;
+          &lt;AJOutlinedButton onClick={() =&gt; this.focusLightFigure2()} disabled={false}&gt;
+            Activate
+          &lt;/AJOutlinedButton&gt;
+        &lt;/div&gt;
+        &lt;div className="createref-ref-sample"&gt;
+          &lt;h3&gt;createRef() Ref&lt;/h3&gt;
+          &lt;figure&gt;
+            &lt;img src={light} ref={this.lightFigure3} /&gt;
+          &lt;/figure&gt;
+          &lt;AJOutlinedButton onClick={() =&gt; this.focusLightFigure3()} disabled={false}&gt;
+            Activate
+          &lt;/AJOutlinedButton&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+      </code>
+    </div>
+    <p>
+      Since this demo is specifically about React 16.3, I will not explain the string and callback function Refs.  However an important takeaway is that 
+      <code>
+        createRef()
+      </code>
+      can be used to achieve the same result as these older approaches.
+    </p>
+    <p>
+      The React team added 
+      <code>
+        createRef()
+      </code>
+       because its more convenient than callback refs and is less buggy than string refs
+      <sup>
+        6
+      </sup>
+      .  However, all three options can still be used.
+    </p>
+    <p>
+      Let me finish by briefly explaining the code sample I wrote.  Upon component construction, I assigned the variable 
+      <code>
+        this.lightFigure3
+      </code>
+       to the result of
+      <code>
+        createRef()
+      </code>
+      .  
+      <code>
+        createRef()
+      </code>
+       creates a ref object.  In the
+      <code>
+        render()
+      </code>
+       function, the ref is attached to the 
+      <code>
+        &lt;img&gt;
+      </code>
+       node using the 
+      <code>
+        ref
+      </code>
+       attribute.
+    </p>
+    <div
+      className="aj-code-snippet"
+    >
+      <code
+        className="javascript hljs-0-2-21"
+        title="JavaScript"
+      >
+        &lt;img src={light} ref={this.lightFigure3} /&gt;
+      </code>
+    </div>
+    <p>
+      Attaching a ref object to a React element like I did above causes the React element's DOM node to be attached to the ref object.  At this point calling the ref provides access to the DOM node and the DOM API.
+    </p>
+    <p>
+      I also added an 
+      <code>
+        onClick()
+      </code>
+       handler to the
+      <code>
+        &lt;AJOutlinedButton&gt;
+      </code>
+       component, which is a wrapper around a button element.  The arrow function invoked by the 
+      <code>
+        onClick()
+      </code>
+       handler sets a value to
+      <code>
+        style.filter
+      </code>
+       on the referenced DOM node.  This sets a 
+      <code>
+        filter
+      </code>
+       CSS style to the 
+      <code>
+        img
+      </code>
+       node using the DOM API.  As a result, the light bulb image appears to light up.
+    </p>
+  </div>
+</div>
+`;
