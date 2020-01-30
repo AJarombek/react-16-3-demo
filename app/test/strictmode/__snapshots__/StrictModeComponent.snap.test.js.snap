@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="strict-mode-component"
+>
+  <div
+    className="outside-strict-mode"
+  >
+    <p>
+      Outside Strict Mode
+    </p>
+  </div>
+  <div
+    className="inside-strict-mode"
+  >
+    <p>
+      Inside Strict Mode
+    </p>
+  </div>
+</div>
+`;

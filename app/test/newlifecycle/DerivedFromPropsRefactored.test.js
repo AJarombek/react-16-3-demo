@@ -16,4 +16,18 @@ describe('unit tests', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
+  it('renders message', () => {
+    const wrapper = shallow(<DerivedFromPropsRefactored show={true} />);
+    expect(wrapper.find('.secret-code')).toHaveLength(1);
+    expect(wrapper.find('.secret-code-classified')).toHaveLength(0);
+    expect(wrapper.find('.secret-code').childAt(0).text()).toEqual('You have a beautiful heart.');
+  });
+
+  it('renders classified', () => {
+    const wrapper = shallow(<DerivedFromPropsRefactored show={false} />);
+    expect(wrapper.find('.secret-code')).toHaveLength(0);
+    expect(wrapper.find('.secret-code-classified')).toHaveLength(1);
+    expect(wrapper.find('.secret-code-classified').childAt(0).text()).toEqual('CLASSIFIED');
+  });
+
 });
