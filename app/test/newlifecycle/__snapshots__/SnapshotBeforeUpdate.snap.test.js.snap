@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="snapshot-before-update"
+>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "aqua",
+      }
+    }
+  >
+    AQUA
+  </button>
+  <p>
+    Previous Color: 
+    <strong>
+      none
+    </strong>
+  </p>
+</div>
+`;

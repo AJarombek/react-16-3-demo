@@ -16,3 +16,29 @@ describe('unit tests', () => {
   });
 
 });
+
+describe('integration tests', () => {
+
+  it('renders ref value on screen', () => {
+    const wrapper = mount(<ForwardRefSample />);
+
+    const refButton = wrapper.find('.button-wrapper').at(0);
+    const refContents = wrapper.find('.prop-ref').childAt(2);
+
+    expect(refContents.text()).toEqual('""');
+    refButton.simulate('click');
+    expect(refContents.text()).toEqual('null');
+  });
+
+  it('renders forward ref value on screen', () => {
+    const wrapper = mount(<ForwardRefSample />);
+
+    const refButton = wrapper.find('.button-wrapper').at(1);
+    const refContents = wrapper.find('.forward-ref').childAt(2);
+
+    expect(refContents.text()).toEqual('""');
+    refButton.simulate('click');
+    expect(refContents.text()).toEqual('{"current":"[object HTMLButtonElement]"}');
+  });
+
+});

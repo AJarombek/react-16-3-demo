@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="derived-from-props-wrapper"
+>
+  <p>
+    <code>
+      getDerivedStateFromProps()
+    </code>
+     Demonstration
+  </p>
+  <div
+    className="ajBaseButton-0-2-4 ajBaseButtonEnabled-0-2-5 aj-contained-button ajContainedButton-0-2-1 ajContainedButtonEnabled-0-2-2"
+    onClick={[Function]}
+  >
+    <button
+      disabled={false}
+      type="button"
+    >
+      Hide Secret Message
+    </button>
+  </div>
+  <div
+    className="derived-from-props"
+  >
+    <div
+      className="secret-code-classified"
+    >
+      <p>
+        CLASSIFIED
+      </p>
+    </div>
+  </div>
+</div>
+`;
