@@ -9,14 +9,12 @@ import React, {useEffect} from 'react';
 import {withRouter} from 'react-router-dom';
 
 const ScrollToTop = ({history}) => {
+  // This effect is invoked when the component first renders, and then is never called again.
+  // This is due to the second argument being empty.
   useEffect(() => {
-    const scrollListener = history.listen(() => {
+    return history.listen(() => {
       window.scrollTo(0, 0);
     });
-
-    return () => {
-      scrollListener();
-    }
   }, []);
 
   return (null);
