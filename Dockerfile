@@ -11,7 +11,7 @@ RUN npm install yarn -g
 RUN yarn --force
 RUN yarn build
 
-FROM node:8-alpine AS app
+FROM node:13-alpine AS app
 
 LABEL maintainer="andrew@jarombek.com" \
       version="1.0.0" \
