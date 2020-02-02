@@ -52,3 +52,12 @@
 .demo-body p a:hover {
     text-decoration: underline;
 }
+
+.demo-body h2 code {
+    font-family: 'Fantasque-Bold', Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+.demo-body h2 {
+    margin: 40px 0;
+}

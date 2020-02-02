@@ -15,7 +15,7 @@ const DerivedFromPropsWrapper = () => {
     <div className="derived-from-props-wrapper">
       <p><code>getDerivedStateFromProps()</code> Demonstration</p>
       <AJContainedButton onClick={() => setShow(!show)}>
-        {show ? 'Show Secret Message' : 'Hide Secret Message'}
+        {show ? 'Hide Secret Message' : 'Show Secret Message'}
       </AJContainedButton>
       <DerivedFromProps show={show}/>
     </div>

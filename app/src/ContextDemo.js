@@ -114,7 +114,7 @@ const ContextDemo = () => {
       <div className="demo-body">
         <p>
           In React 16.3, the Context API was rewritten. Context allows data to be shared
-          amongst components without passing it via props from parents to children<sup>1</sup>.
+          amongst components without being passed via props from parents to children<sup>1</sup>.
           While I'm still learning which scenarios are appropriate for the Context API, the React
           blog recommends to use it for "global" data used by a tree of React
           components<sup>2</sup>.
@@ -129,7 +129,7 @@ const ContextDemo = () => {
         </p>
         <ThemeWithProps />
         <p>
-          Next I implemented the same component with the Context API.
+          Next I implemented the same scenario with the Context API.
         </p>
         <ThemeWithContext />
         <p>
@@ -153,8 +153,8 @@ const ContextDemo = () => {
           {themeWithContextCardCode}
         </AJCodeSnippet>
         <p>
-          If you want to see the full code, <a href="https://bit.ly/35Mto2s">
-          ThemeWithProps.js</a> and <a href="https://bit.ly/2ThDS7q">ThemeWithContext.js</a> are
+          If you want to see the full code, <a href="https://bit.ly/2ucCed9">
+          ThemeWithProps.js</a> and <a href="https://bit.ly/2RNueIA">ThemeWithContext.js</a> are
           available on GitHub.  In these code samples, its important to focus on how the
           <code>theme</code> variable is passed down to the <code>ThemeWithPropsCard</code> and
           <code>ThemeWithContextCard</code> components.
@@ -173,7 +173,7 @@ const ContextDemo = () => {
           separation of concerns is possible with the Context API.  With the Context API, global
           variables are created and provided for component chains.  Components can consume the
           context if they need their values, or can just ignore them.  In the previous hypothetical
-          example I presented, Components in the middle of the chain don't need to be aware of the
+          situation I presented, Components in the middle of the chain don't need to be aware of the
           context they exist in.
         </p>
         <p>

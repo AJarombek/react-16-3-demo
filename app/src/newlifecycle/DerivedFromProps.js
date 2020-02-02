@@ -18,7 +18,7 @@ class DerivedFromProps extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     // Assert that this lifecycle method does not have access to the component instance.
-    console.assert(this, undefined);
+    console.assert(this === undefined);
 
     if (props.show) {
       return { secretCode: 1231 };

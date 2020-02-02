@@ -116,8 +116,8 @@ const CreateRefDemo = () => {
         </p>
         <p>
           Let me finish by briefly explaining the code sample I wrote.  Upon component construction,
-          I assigned the variable <code>this.lightFigure3</code> to the result of
-          <code>createRef()</code>.  <code>createRef()</code> creates a ref object.  In the
+          I assigned the result of <code>createRef()</code> to the variable
+          <code>this.lightFigure3</code>.  <code>createRef()</code> creates a ref object.  In the
           <code>render()</code> function, the ref is attached to the <code>&lt;img&gt;</code> node
           using the <code>ref</code> attribute.
         </p>

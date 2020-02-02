@@ -45,7 +45,7 @@ class DerivedFromProps extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     // Assert that this lifecycle method does not have access to the component instance.
-    console.assert(this, undefined);
+    console.assert(this === undefined);
 
     if (props.show) {
       return { secretCode: 1231 };
@@ -171,7 +171,7 @@ const NewLifecycleDemo = () => {
         <p>
           It was also announced that three lifecycle methods will be slowly phased out over the
           coming releases. In React 17 (still not released at the time I'm writing this - Jan.
-          17th, 2020) <code>componentWillMount</code>, <code>componentWillReceiveProps</code>,
+          31th, 2020) <code>componentWillMount</code>, <code>componentWillReceiveProps</code>,
           and <code>componentWillUpdate</code> will be removed. Legacy code can simply rename
           these methods to <code>UNSAFE_componentWillMount</code>,
           <code>UNSAFE_componentWillReceiveProps</code>, and
@@ -250,7 +250,7 @@ const NewLifecycleDemo = () => {
         <p>
           <code>getDerivedStateFromProps()</code> is called during the initial component render and
           each subsequent re-render.  It takes two arguments, the state and props of the component.
-          Its expected to return either an object with properties to update the component state or
+          It returns either an object with properties to update the component state or
           <code>null</code> if the component state should remain unchanged.
         </p>
         <p>

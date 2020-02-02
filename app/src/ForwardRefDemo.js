@@ -42,7 +42,7 @@ const ForwardRefDemo = () => {
           Ref Forwarding is when refs are passed through a component to a React element.
           Passing refs through props does not work, so special logic is needed.  If
           you try to pass a ref as a prop, it is bound to the component instead of the
-          underlying DOM node.  For functional components, the ref will equal <code>null</code>
+          underlying DOM node.  For functional components, this results in <code>null</code>
           <sup>7</sup>.
         </p>
         <p>
@@ -70,7 +70,7 @@ const ForwardRefDemo = () => {
           {forwardRefsCodeSnippet}
         </AJCodeSnippet>
         <p>
-          To implement forward ref passing, the component definition needs to be wrapped in the
+          To implement forward ref passing, the component definition is wrapped in the
           <code>forwardRef()</code> function as shown above.
         </p>
       </div>

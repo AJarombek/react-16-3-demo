@@ -16,7 +16,7 @@ const App = () => {
   const contextNote =
     <>
       In React 16.3, the Context API was rewritten. Context allows data to be shared amongst
-      components without passing it via props from parents to children<sup>1</sup>. While I'm
+      components without being passed via props from parents to children<sup>1</sup>. While I'm
       still learning which scenarios are appropriate for the context API, the React blog
       recommends to use it for "global" data used by a tree of React components<sup>2</sup>.
     </>;
@@ -34,7 +34,7 @@ const App = () => {
     <>
       Ref Forwarding is when refs are passed through a component to a React element.
       Passing refs through props does not work, so special logic is needed.  If you try to
-      pass a ref as a prop, it will be bound to the component instead of the underlying DOM node.
+      pass a ref as a prop, it is bound to the component instead of the underlying DOM node.
       React 16.3 introduced ref forwarding, which allows refs to be forwarded through a component to
       an underlying DOM node.
     </>;

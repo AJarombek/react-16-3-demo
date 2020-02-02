@@ -42,11 +42,12 @@
     background-color: white;
 }
 
-.dark-theme-with-props, .dark-theme-with-props {
+.dark-theme-with-props, .dark-theme-with-context {
     background-color: #444;
 }
 
-.dark-theme-with-props .aj-switch-icon-off, .dark-theme-with-props .aj-switch-icon-on {
+.dark-theme-with-props .aj-switch-icon-off, .dark-theme-with-props .aj-switch-icon-on,
+.dark-theme-with-context .aj-switch-icon-off, .dark-theme-with-context .aj-switch-icon-on {
     filter: invert(1);
 }
 
@@ -55,7 +56,7 @@
     width: 100%;
 }
 
-.theme-with-context-card .aj-text-card-title {
+.theme-with-context-card .aj-text-card-title, .theme-with-props-card .aj-text-card-title {
     font-size: 19px;
 }
 
