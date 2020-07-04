@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
       disabled={false}
       type="button"
     >
-      Hide Secret Message
+      Show Secret Message
     </button>
   </div>
   <div

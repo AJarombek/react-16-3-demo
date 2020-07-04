@@ -229,7 +229,7 @@ const NewLifecycleDemo = () => {
           <code>getDerivedStateFromProps()</code> and <code>getSnapshotBeforeUpdate()</code>
           specifically since they were released with React 16.3.
         </p>
-        <h2><code>getDerivedStateFromProps()</code></h2>
+        <h2 className="code-header"><code>getDerivedStateFromProps()</code></h2>
         <p>
           <code>getDerivedStateFromProps()</code> replaces the soon to be deprecated
           <code>componentWillReceiveProps()</code> lifecycle method. The main difference
@@ -280,7 +280,7 @@ const NewLifecycleDemo = () => {
         <AJCodeSnippet language="javascript">
           {derivedFromPropsRefactoredCodeSnippet}
         </AJCodeSnippet>
-        <h2><code>getSnapshotBeforeUpdate()</code></h2>
+        <h2 className="code-header"><code>getSnapshotBeforeUpdate()</code></h2>
         <p>
           <code>getSnapshotBeforeUpdate()</code> is a new lifecycle method used in conjunction with
           <code>componentDidUpdate()</code>.  A combination of the two can be used as a replacement

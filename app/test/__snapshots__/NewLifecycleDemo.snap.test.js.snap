@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
       .
     </p>
     <p>
-      It was also announced that three lifecycle methods will be slowly phased out over the coming releases. In React 17 (still not released at the time I'm writing this - Jan. 17th, 2020) 
+      It was also announced that three lifecycle methods will be slowly phased out over the coming releases. In React 17 (still not released at the time I'm writing this - Jan. 31th, 2020) 
       <code>
         componentWillMount
       </code>
@@ -188,7 +188,9 @@ exports[`renders correctly 1`] = `
       </code>
       specifically since they were released with React 16.3.
     </p>
-    <h2>
+    <h2
+      className="code-header"
+    >
       <code>
         getDerivedStateFromProps()
       </code>
@@ -245,7 +247,7 @@ exports[`renders correctly 1`] = `
       <code>
         getDerivedStateFromProps()
       </code>
-       is called during the initial component render and each subsequent re-render.  It takes two arguments, the state and props of the component. Its expected to return either an object with properties to update the component state or
+       is called during the initial component render and each subsequent re-render.  It takes two arguments, the state and props of the component. It returns either an object with properties to update the component state or
       <code>
         null
       </code>
@@ -330,7 +332,7 @@ class DerivedFromProps extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     // Assert that this lifecycle method does not have access to the component instance.
-    console.assert(this, undefined);
+    console.assert(this === undefined);
 
     if (props.show) {
       return { secretCode: 1231 };
@@ -382,7 +384,7 @@ DerivedFromProps.propTypes = {
           disabled={false}
           type="button"
         >
-          Hide Secret Message
+          Show Secret Message
         </button>
       </div>
       <div
@@ -444,7 +446,9 @@ DerivedFromPropsRefactored.propTypes = {
 
       </code>
     </div>
-    <h2>
+    <h2
+      className="code-header"
+    >
       <code>
         getSnapshotBeforeUpdate()
       </code>

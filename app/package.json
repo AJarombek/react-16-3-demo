@@ -40,7 +40,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --hot --inline",
-    "test": "jest"
+    "test": "jest",
+    "test:update": "jest --update-snapshot"
   },
   "browserslist": {
     "production": [

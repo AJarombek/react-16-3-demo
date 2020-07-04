@@ -213,13 +213,13 @@ class RefSamples extends React.Component {
       .  However, all three options can still be used.
     </p>
     <p>
-      Let me finish by briefly explaining the code sample I wrote.  Upon component construction, I assigned the variable 
-      <code>
-        this.lightFigure3
-      </code>
-       to the result of
+      Let me finish by briefly explaining the code sample I wrote.  Upon component construction, I assigned the result of 
       <code>
         createRef()
+      </code>
+       to the variable
+      <code>
+        this.lightFigure3
       </code>
       .  
       <code>

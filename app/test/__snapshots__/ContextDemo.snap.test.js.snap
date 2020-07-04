@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
     className="demo-body"
   >
     <p>
-      In React 16.3, the Context API was rewritten. Context allows data to be shared amongst components without passing it via props from parents to children
+      In React 16.3, the Context API was rewritten. Context allows data to be shared amongst components without being passed via props from parents to children
       <sup>
         1
       </sup>
@@ -127,7 +127,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <p>
-      Next I implemented the same component with the Context API.
+      Next I implemented the same scenario with the Context API.
     </p>
     <div
       className="theme-with-context light-theme-with-context"
@@ -343,13 +343,13 @@ const ThemeWithContext = () =&gt; {
     <p>
       If you want to see the full code, 
       <a
-        href="https://bit.ly/35Mto2s"
+        href="https://bit.ly/2ucCed9"
       >
         ThemeWithProps.js
       </a>
        and 
       <a
-        href="https://bit.ly/2ThDS7q"
+        href="https://bit.ly/2RNueIA"
       >
         ThemeWithContext.js
       </a>
@@ -390,7 +390,7 @@ const ThemeWithContext = () =&gt; {
        prop, but need to be aware of it because a nested child needs it.
     </p>
     <p>
-      Ideally components only contain code that helps them complete their job.  Creating this separation of concerns is possible with the Context API.  With the Context API, global variables are created and provided for component chains.  Components can consume the context if they need their values, or can just ignore them.  In the previous hypothetical example I presented, Components in the middle of the chain don't need to be aware of the context they exist in.
+      Ideally components only contain code that helps them complete their job.  Creating this separation of concerns is possible with the Context API.  With the Context API, global variables are created and provided for component chains.  Components can consume the context if they need their values, or can just ignore them.  In the previous hypothetical situation I presented, Components in the middle of the chain don't need to be aware of the context they exist in.
     </p>
     <p>
       In 
