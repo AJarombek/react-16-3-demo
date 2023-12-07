@@ -1,5 +1,11 @@
 # react-16-3-demo
 
+![Maintained Label](https://img.shields.io/badge/Maintained-No-red?style=for-the-badge)
+![Deprecated Label](https://img.shields.io/badge/Deprecated-Yes-lightgray?style=for-the-badge)
+![Archived Label](https://img.shields.io/badge/Archived-Yes-lightgray?style=for-the-badge)
+
+> Code Migrated to [andy-jarombek-research](https://github.com/AJarombek/andy-jarombek-research)
+
 ### Overview
 
 Demo application for the new features introduced in React 16.3.
